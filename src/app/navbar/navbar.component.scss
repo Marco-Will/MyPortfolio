@@ -1,0 +1,35 @@
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    z-index: 1;
+    background-color: #141D2F;
+
+    h1 
+    {
+        color: white;
+        font-family: Poppins-M;
+
+    }
+    a 
+    {
+        text-decoration: none;
+        color: white;
+        margin-left: 2rem;
+        font-size: 1.8rem;
+        font-family: Poppins-L;
+        
+
+        &:hover
+        {
+            color:var(--color-green);
+        }
+    }
+}

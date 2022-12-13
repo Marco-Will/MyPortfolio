@@ -1,0 +1,155 @@
+.home-container
+{
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    .left-picture
+    {
+        object-fit: contain;
+        position: absolute;
+        left: -20%;
+        height: 90%;
+        
+        
+    }
+
+    .right-picture
+    {
+        object-fit: contain;
+        position: absolute;
+        right:  -30%;
+        height: 90%;
+        
+        
+         
+    }
+
+    .home-content
+    {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        font-family: Poppins-M;
+
+        .title-name
+        {
+            font-size: 7rem;
+            color: white;
+            
+        }
+
+        .title-skill 
+        {
+            font-size: 3rem;
+            color: var(--color-purple);
+        }
+
+        .hc1-hc2
+        {
+            display: flex;
+            
+        }
+        .hc1 
+        {
+            transform: rotate(-90deg);
+            font-size: 5rem;
+            line-height: 120%;
+            padding-top: 6rem;
+            padding-right: 1rem;
+            color: white;
+        }
+        .hc2
+        {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        button 
+        {
+            font-size: 1.7rem;
+            position: absolute;
+            bottom: -5rem;
+            right: 20%;
+            border: 0;
+            border-radius: 1rem;
+            background-color: var(--color-green);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 30px;
+            gap: 10px;
+            cursor: pointer;
+            color: white;
+            transform-origin: 50% 0%;
+            transition: 0.3s ease-in-out;
+
+            &:hover
+            {
+                background-color: var(--color-purple);
+                transform:  scale( 1.2);
+                transform-origin:top left;
+                transition: 0.3s ease-in-out;
+
+            }
+        }
+    }
+
+    .home-end-left
+    {
+        position: absolute;
+        left: 0;
+        bottom: 2%;
+        display: flex;
+        align-items: center;
+        
+        img 
+        {
+            margin-right: 2rem;
+        }
+
+        .social-media-icon
+        {
+            cursor: pointer;
+            transition: 0.1s ease-in-out;
+
+            &:hover
+            {
+                transform: scale(1.3);
+                transition: 0.1s ease-in-out;
+
+            }
+        }
+    }
+
+    .home-end-right
+    {   
+        position: absolute;
+        right: 0;
+        bottom: 7%; 
+        
+        p 
+        {   
+            font-size: 1.5rem;
+            color: white;
+            font-family: Poppins-M;
+            transform: rotate(90deg); 
+
+            img 
+            {
+            transform: rotate(-90deg);
+            }
+        }
+    }
+}
+
+
+    
+  

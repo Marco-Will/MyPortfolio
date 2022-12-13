@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+body
+{
+    background-color:#141D2F ;
+    margin: 0;
+}
+
+html 
+{
+    scroll-behavior: smooth;
+}
+/* COLOR VARIABLES */
+
+:root 
+{
+    --color-purple:  #9747FF;
+    --color-green: #70E61C;
+}
+
+
+@font-face {
+    font-family: "Poppins-M";
+    src: url("assets/fonts/Poppins-Medium.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Poppins-L";
+    src: url("assets/fonts/Poppins-ExtraLight.ttf") format("truetype");
+  }

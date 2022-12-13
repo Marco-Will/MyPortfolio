@@ -1,0 +1,78 @@
+.aboutme-container
+{
+    
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    font-family: Poppins-M;
+    display: flex;
+    align-items: center;
+    
+    
+    
+
+    h1 
+    {
+        font-size: 5rem;
+    }
+
+    .text-section
+    {
+        padding-left: 100px;
+        width: 50%;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+    .info
+    {
+        display: flex;
+        margin-top: 3rem;
+
+        img
+        {
+            object-fit: contain;
+            height: 2.5rem;
+            width: 10rem;
+            align-self: center;
+            transition: 0.2s ease-in-out;
+
+             &:hover
+            {
+                transform: scale(1.4);
+                transition: 0.2s ease-in-out;
+                filter: invert(1);
+            }
+        }
+    }
+    
+
+    .picture-section 
+    {
+        position: relative;
+        background-image: url('/assets/img/bg/photo shadows.png');
+        width: 50%;
+        height: 100vh;
+        background-size: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+
+
+
+        img 
+        {   
+            object-fit: contain;
+            height: 70%;
+            width:70%;
+            position: absolute;
+            top: 19%;
+            left: 20%;
+        }
+    }
+
+
+
+}
