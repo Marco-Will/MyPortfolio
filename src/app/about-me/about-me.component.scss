@@ -20,43 +20,71 @@
 
     .text-section
     {
-        padding-left: 100px;
+        padding-left:10%;
         width: 50%;
         margin-bottom: 100px;
         color: white;
+        padding-right: 20%;
     }
 
     .info
     {
         display: flex;
         margin-top: 3rem;
+        font-size: 1rem;
 
-        img
-        {
-            object-fit: contain;
-            height: 2.5rem;
-            width: 10rem;
-            align-self: center;
-            transition: 0.2s ease-in-out;
-
-             &:hover
+        
+        
+            .icon-lamp
             {
-                transform: scale(1.4);
+                object-fit: contain;
+                height: 2.5rem;
+                
+                padding-right: 13%;
+                
+                align-self: center;
                 transition: 0.2s ease-in-out;
-                filter: invert(1);
+    
+                 &:hover
+                {
+                    transform: scale(1.4);
+                    transition: 0.2s ease-in-out;
+                    filter: invert(1);
+                }
             }
-        }
+
+            .icon-puzzle
+            {
+                object-fit: contain;
+                height: 2.5rem;
+                
+                padding-right: 11%;
+                
+                align-self: center;
+                transition: 0.2s ease-in-out;
+    
+                 &:hover
+                {
+                    transform: scale(1.4);
+                    transition: 0.2s ease-in-out;
+                    filter: invert(1);
+                }
+            }
+            
+        
     }
     
 
     .picture-section 
     {
+        
+        
         position: relative;
         background-image: url('/assets/img/bg/photo shadows.png');
+        background-position: left;
         width: 50%;
         height: 100vh;
         background-size: 80%;
-        background-position: center;
         background-repeat: no-repeat;
         
 
@@ -68,11 +96,13 @@
             height: 70%;
             width:70%;
             position: absolute;
-            top: 19%;
-            left: 20%;
+            top: 15%;
+            left: 5%;
+            z-index: 1;
         }
     }
 
+    
 
 
 }
