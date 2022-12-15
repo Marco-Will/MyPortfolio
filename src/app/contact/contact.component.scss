@@ -1,0 +1,164 @@
+    .contact-right
+    {
+
+        
+        padding-top: 4%;
+        color: white;
+        display: flex;
+        width: 100vw;
+        justify-content: end;
+        
+
+        h1 
+        {   
+            font-size: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            img 
+            {
+                object-fit: contain;
+                width: 60%;
+                margin-left: 50px;
+                height: 0.4rem;
+            }
+        }
+
+    }
+.contact-container
+{
+    
+    color: white;
+    display: flex;
+    
+    position: relative;
+    overflow: hidden;
+    
+
+    .contact-text
+    {
+        width: 50%;
+        display: flex;
+        align-items: baseline;
+        
+        
+        img 
+        {
+            padding-bottom: 0.5rem;
+        }
+
+        .text 
+        {
+            margin-left: 2rem;
+           
+            h3 
+            {
+                font-size: 2rem;
+                align-self: flex-start;      
+            }
+            a 
+            {
+                color: var(--color-green);
+                font-size: 1.6rem;
+            }
+        }
+    }
+    form
+    {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1.3rem;
+        padding-bottom: 4rem;
+
+        input 
+        {
+            width: 70%;
+            border: 2px solid var(--color-purple);
+
+            border-radius: 5px;
+            background-color: transparent;
+            color: white;
+            padding: 15px 25px;
+            gap: 10px;
+            box-shadow: -2px 3px 16px 1px #8147FF;
+        }
+
+        textarea
+        {   
+            box-shadow: -2px 3px 16px 1px #8147FF;
+            color: white;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 15px 25px;
+            gap: 10px;
+            isolation: isolate;
+            height: 200px;
+            background: #141D2F;
+            border: 2px solid var(--color-purple);
+            border-radius: 10px;
+            flex: none;
+            flex-grow: 0;
+         }
+
+         button 
+        {
+            font-size: 1.7rem;
+            border: 0;
+            border-radius: 0.5rem;
+            background-color: var(--color-green);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 30px;
+            gap: 10px;
+            cursor: pointer;
+            color: white;
+            transform-origin: 50% 0%;
+            transition: 0.3s ease-in-out;
+            margin-top: 3rem;
+
+            &:hover
+            {
+                background-color: var(--color-purple);
+                transform:  scale( 1.2);
+                transform-origin:top left;
+                transition: 0.3s ease-in-out;
+
+            }
+        }
+                    
+    }
+
+    .arrow-up   
+    {
+        object-fit: contain;
+        align-self: flex-end;
+        margin-right: 13%;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        &:hover
+        {
+           
+            transform:  scale( 1.2);
+            transform-origin:top left;
+            transition: 0.3s ease-in-out
+        }
+    }
+
+    .bg-purple
+    {
+        position: absolute;
+        bottom: -16rem;
+        left: -13rem;
+        z-index: -4;
+    }
+   
+}

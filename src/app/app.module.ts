@@ -7,6 +7,13 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { PortfolioProjectComponent } from './portfolio-project/portfolio-project.component';
+import { PortfolioProjectMirrorComponent } from './portfolio-project-mirror/portfolio-project-mirror.component';
+import { ContactComponent } from './contact/contact.component';
+import { PortfolioProjectTwoComponent } from './portfolio-project-two/portfolio-project-two.component';
+import { PortfolioProjectMirrorTwoComponent } from './portfolio-project-mirror-two/portfolio-project-mirror-two.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +21,14 @@ import { SkillsComponent } from './skills/skills.component';
     NavbarComponent,
     HomeComponent,
     AboutMeComponent,
-    SkillsComponent
+    SkillsComponent,
+    PortfolioComponent,
+    PortfolioProjectComponent,
+    PortfolioProjectMirrorComponent,
+    ContactComponent,
+    PortfolioProjectTwoComponent,
+    PortfolioProjectMirrorTwoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
