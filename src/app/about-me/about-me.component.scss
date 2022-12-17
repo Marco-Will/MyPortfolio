@@ -13,7 +13,7 @@
     
     
 
-    h1 
+    .h1 
     {
         font-size: 5rem;
     }
@@ -21,10 +21,9 @@
     .text-section
     {
         padding-left:10%;
-        width: 50%;
+        width: 50%; 
         margin-bottom: 100px;
-        color: white;
-        padding-right: 20%;
+        color: white;  
     }
 
     .info
@@ -77,13 +76,15 @@
     {
         
         
-        position: relative;
-        background-image: url('/assets/img/bg/photo shadows.png');
-        background-position: left;
-        width: 60%;
         
-        background-size: 80%;
+        background-image: url('/assets/img/bg/photo shadows.png');
+        background-position: center;
+        width: 50%; 
+        background-size: contain;
+    
         background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
         
 
 
@@ -92,7 +93,7 @@
         {   
             object-fit: contain;
             height: 500px;
-            width:70%;
+            /* width:50%; */
             /* position: absolute;
             top: 15%;
             left: 5%; */
@@ -103,4 +104,119 @@
     
 
 
+}
+
+@media (max-width: 900px)
+{
+    .aboutme-container
+    {
+        
+        
+        width: 100vw;
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+        font-family: Poppins-M;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+        
+        .h1 
+        {
+            font-size: 3rem;
+        }
+
+        .text-section
+        {
+            padding-left:0%;
+            width: 80%!important;
+            margin-bottom: 3rem!important;
+            margin-top: 3rem!important;
+
+            color: white;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .info
+        {
+            display: flex;
+            margin-top: 3rem;
+            font-size: 1rem;
+
+                .icon-lamp
+                {
+                    object-fit: contain;
+                    height: 2.5rem;
+                    
+                    padding-right: 13%;
+                    
+                    align-self: center;
+                    transition: 0.2s ease-in-out;
+        
+                    &:hover
+                    {
+                        transform: scale(1.4);
+                        transition: 0.2s ease-in-out;
+                        filter: invert(1);
+                    }
+                }
+
+                .icon-puzzle
+                {
+                    object-fit: contain;
+                    height: 2.5rem;
+                    
+                    padding-right: 11%;
+                    
+                    align-self: center;
+                    transition: 0.2s ease-in-out;
+        
+                    &:hover
+                    {
+                        transform: scale(1.4);
+                        transition: 0.2s ease-in-out;
+                        filter: invert(1);
+                    }
+                }
+                
+            
+        }
+        
+
+        .picture-section 
+        {
+            
+            
+            
+            background-image: url('/assets/img/bg/photo shadows.png');
+            background-position: center;
+            width: 100%!important; 
+            background-size: contain;
+        
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            
+
+
+
+            img 
+            {   
+                object-fit: contain;
+                height: 500px;
+                /* width:50%; */
+                /* position: absolute;
+                top: 15%;
+                left: 5%; */
+                z-index: 1;
+            }
+        }
+
+        
+
+
+    }
 }

@@ -2,8 +2,7 @@
 {
     
     position: relative;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    
    
 
     .portfolio-head
@@ -11,7 +10,7 @@
         font-family: Poppins-M;
         display: flex;
         align-items: center;
-        margin-top:50px;
+        
         position: relative;
         
 
@@ -41,6 +40,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* overflow: hidden; */
         /* padding-left: 10%;
         padding-right: 10%; */
 
@@ -66,8 +66,93 @@
 
 
         }
+        .blue-bg-right
+        {
+            position: absolute;
+            right: -15rem;
+            top: -3rem;
+            object-fit: contain;
+            height: 600px;
+            z-index: -2;
+        }
     }
 
 
+}
+
+
+@media (max-width:900px) 
+{
+    .portfolio-head
+    {
+        font-family: Poppins-M;
+        display: flex;
+        align-items: center;
+        position: relative;
+        
+
+    
+        h1 
+        {   
+            color: white;
+            font-size: 3rem!important;
+            display: flex;
+            align-items: center;
+            
+            
+            
+            img     
+            {
+                object-fit: contain;
+                width: 21%!important;
+                margin-right: 2rem;
+            }
+        }
+   
+    }
+}
+
+@media (max-width:520px) 
+{
+    .project-container
+    {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* overflow: hidden; */
+        /* padding-left: 10%;
+        padding-right: 10%; */
+
+        .purple-bg-left
+        {
+            position: absolute;
+            left: -4rem!important;
+            top: 75rem!important;
+            z-index: -2;
+            object-fit: contain;
+            height: 300px!important;
+        }
+        .green-bg-right
+        {
+            position: absolute;
+            right:0rem!important;
+            bottom:-6rem!important;
+            object-fit: contain;
+            height: 300px!important;
+            z-index: -2;
+
+
+        }
+        .blue-bg-right
+        {
+            position: absolute;
+            right: -8rem!important;
+            top: -9rem!important;
+            object-fit: contain;
+            height: 300px!important;
+            z-index: -2;
+        }
+    }
 }
 
