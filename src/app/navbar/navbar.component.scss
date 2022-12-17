@@ -31,5 +31,19 @@ header
         {
             color:var(--color-green);
         }
+    }   
+
+    
+    
+
+}
+
+
+@media (max-width: 1000px)
+{
+    .hide
+    {
+        display: none;
     }
+   
 }

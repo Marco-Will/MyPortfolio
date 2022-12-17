@@ -9,8 +9,8 @@ export class ContactComponent
 {
   @ViewChild('arrowUp') arrowUp!: ElementRef;
 
-  defaultArrowUp = '../../assets/img/icons/Go up button.png'
-  ArrowUpHover = '../../assets/img/icons/go-up-btn-green.png'
+  defaultArrowUp = 'assets/img/icons/Go up button.png'
+  ArrowUpHover = 'assets/img/icons/go-up-btn-green.png'
   currentArrowImage = this.defaultArrowUp;
   
 

@@ -61,7 +61,18 @@
             {
                 color: var(--color-green);
                 font-size: 1.6rem;
+                text-decoration: none;
+                transition: ease-in-out 1s;
+
+
+                &:hover
+                {
+                    color: var(--color-purple);
+                    transition: ease-in-out 1s;
+                }
             }
+
+
         }
     }
     form

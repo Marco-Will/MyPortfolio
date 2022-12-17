@@ -2,19 +2,20 @@
 {
     
     
-    height: 70vh;
+    //height: 70vh;
     //width: 100vw;
     //max-width: 100%;
     overflow: hidden;
     position: relative;
     font-family: Poppins-M;
     display: flex;
+    margin-top: 1rem;
     
 
    .skills-left
    {
     width: 60%;
-    padding-top: 3%;
+    padding-top: 6%;
     display: flex;
     padding-left:4%;
     
@@ -22,8 +23,11 @@
     table 
     {
         width: 80%;
+        
+       
         td 
         {
+            padding: 2rem;
             .icon-skill
             {
                 display: flex;
@@ -36,7 +40,7 @@
                 img 
                 {
                     object-fit: contain;
-                    height: 3rem;
+                    height: 2.5rem;
                 }
             }
         }
@@ -50,7 +54,7 @@
    .skills-right
    {
     width: 40%;
-    padding-top: 4%;
+    padding-top: 3rem;
     color: white;
     
 
@@ -72,7 +76,7 @@
     button 
         {
             font-size: 1.7rem;
-            margin-top: 20%;
+            margin-top: 10%;
             border: 0;
             border-radius: 0.5rem;
             background-color: var(--color-green);
