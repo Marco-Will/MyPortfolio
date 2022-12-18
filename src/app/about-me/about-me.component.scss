@@ -1,222 +1,163 @@
-.aboutme-container
-{
-    
-    
+.aboutme-container {
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  font-family: Poppins-M;
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+
+  .h1 {
+    font-size: 5rem;
+  }
+
+  .text-section {
+    padding-left: 10%;
+    width: 50%;
+    margin-bottom: 100px;
+    color: white;
+  }
+
+  .info {
+    display: flex;
+    margin-top: 3rem;
+    font-size: 1rem;
+
+    .icon-lamp {
+      object-fit: contain;
+      height: 2.5rem;
+
+      padding-right: 13%;
+
+      align-self: center;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.4);
+        transition: 0.2s ease-in-out;
+        filter: invert(1);
+      }
+    }
+
+    .icon-puzzle {
+      object-fit: contain;
+      height: 2.5rem;
+
+      padding-right: 11%;
+
+      align-self: center;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.4);
+        transition: 0.2s ease-in-out;
+        filter: invert(1);
+      }
+    }
+  }
+
+  .picture-section {
+    background-image: url("/assets/img/bg/photo shadows.png");
+    background-position: center;
+    width: 50%;
+    background-size: contain;
+
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+
+    img {
+      object-fit: contain;
+      height: 500px;
+      z-index: 1;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .aboutme-container {
     width: 100vw;
     max-width: 100%;
     overflow: hidden;
     position: relative;
     font-family: Poppins-M;
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
-    
-    
-    
 
-    .h1 
-    {
-        font-size: 5rem;
+    .h1 {
+      font-size: 3rem;
     }
 
-    .text-section
-    {
-        padding-left:10%;
-        width: 50%; 
-        margin-bottom: 100px;
-        color: white;  
+    .text-section {
+      padding-left: 0%;
+      width: 80% !important;
+      margin-bottom: 3rem !important;
+      margin-top: 3rem !important;
+
+      color: white;
+      display: flex;
+      flex-direction: column;
     }
 
-    .info
-    {
-        display: flex;
-        margin-top: 3rem;
-        font-size: 1rem;
+    .info {
+      display: flex;
+      margin-top: 3rem;
+      font-size: 1rem;
 
-            .icon-lamp
-            {
-                object-fit: contain;
-                height: 2.5rem;
-                
-                padding-right: 13%;
-                
-                align-self: center;
-                transition: 0.2s ease-in-out;
-    
-                 &:hover
-                {
-                    transform: scale(1.4);
-                    transition: 0.2s ease-in-out;
-                    filter: invert(1);
-                }
-            }
+      .icon-lamp {
+        object-fit: contain;
+        height: 2.5rem;
 
-            .icon-puzzle
-            {
-                object-fit: contain;
-                height: 2.5rem;
-                
-                padding-right: 11%;
-                
-                align-self: center;
-                transition: 0.2s ease-in-out;
-    
-                 &:hover
-                {
-                    transform: scale(1.4);
-                    transition: 0.2s ease-in-out;
-                    filter: invert(1);
-                }
-            }
-            
-        
-    }
-    
+        padding-right: 13%;
 
-    .picture-section 
-    {
-        
-        
-        
-        background-image: url('/assets/img/bg/photo shadows.png');
-        background-position: center;
-        width: 50%; 
-        background-size: contain;
-    
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        
+        align-self: center;
+        transition: 0.2s ease-in-out;
 
-
-
-        img 
-        {   
-            object-fit: contain;
-            height: 500px;
-            /* width:50%; */
-            /* position: absolute;
-            top: 15%;
-            left: 5%; */
-            z-index: 1;
+        &:hover {
+          transform: scale(1.4);
+          transition: 0.2s ease-in-out;
+          filter: invert(1);
         }
+      }
+
+      .icon-puzzle {
+        object-fit: contain;
+        height: 2.5rem;
+
+        padding-right: 11%;
+
+        align-self: center;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.4);
+          transition: 0.2s ease-in-out;
+          filter: invert(1);
+        }
+      }
     }
 
-    
+    .picture-section {
+      background-image: url("/assets/img/bg/photo shadows.png");
+      background-position: center;
+      width: 100% !important;
+      background-size: contain;
 
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
 
-}
-
-@media (max-width: 900px)
-{
-    .aboutme-container
-    {
-        
-        
-        width: 100vw;
-        max-width: 100%;
-        overflow: hidden;
-        position: relative;
-        font-family: Poppins-M;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        
-        
-        .h1 
-        {
-            font-size: 3rem;
-        }
-
-        .text-section
-        {
-            padding-left:0%;
-            width: 80%!important;
-            margin-bottom: 3rem!important;
-            margin-top: 3rem!important;
-
-            color: white;
-            display: flex;
-            flex-direction: column;
-            
-        }
-
-        .info
-        {
-            display: flex;
-            margin-top: 3rem;
-            font-size: 1rem;
-
-                .icon-lamp
-                {
-                    object-fit: contain;
-                    height: 2.5rem;
-                    
-                    padding-right: 13%;
-                    
-                    align-self: center;
-                    transition: 0.2s ease-in-out;
-        
-                    &:hover
-                    {
-                        transform: scale(1.4);
-                        transition: 0.2s ease-in-out;
-                        filter: invert(1);
-                    }
-                }
-
-                .icon-puzzle
-                {
-                    object-fit: contain;
-                    height: 2.5rem;
-                    
-                    padding-right: 11%;
-                    
-                    align-self: center;
-                    transition: 0.2s ease-in-out;
-        
-                    &:hover
-                    {
-                        transform: scale(1.4);
-                        transition: 0.2s ease-in-out;
-                        filter: invert(1);
-                    }
-                }
-                
-            
-        }
-        
-
-        .picture-section 
-        {
-            
-            
-            
-            background-image: url('/assets/img/bg/photo shadows.png');
-            background-position: center;
-            width: 100%!important; 
-            background-size: contain;
-        
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            
-
-
-
-            img 
-            {   
-                object-fit: contain;
-                height: 500px;
-                /* width:50%; */
-                /* position: absolute;
+      img {
+        object-fit: contain;
+        height: 500px;
+        /* width:50%; */
+        /* position: absolute;
                 top: 15%;
                 left: 5%; */
-                z-index: 1;
-            }
-        }
-
-        
-
-
+        z-index: 1;
+      }
     }
+  }
 }

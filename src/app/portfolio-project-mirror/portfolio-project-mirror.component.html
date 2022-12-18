@@ -1,21 +1,23 @@
 <div class="work_one_container">
-   
-    
-    <div class="pic_text_container">
-        <div class="work_one_pic">
-            <!-- Image (Screenshot)-->
-            <img class="my_work_img" src="assets/img/bg/sharkie.png">
-        </div>
-        <div class="work_one_text">
-            <span class="h3"> Sharkie </span>
-            <p class="tech_stack">JavaScript | HTML | CSS | </p>
-            <p class="work_one_desc">A 2D Jump´n Run game created with javascript.
-            </p>
-            <div class="project-buttons">
-                <button class="btn-livetest">Live test</button>
-                <button class="btn-github">Github</button>
-            </div>
-        </div>
+  <div class="pic_text_container">
+    <div class="work_one_pic img-wrapper-green-purple">
+      <!-- Image (Screenshot)-->
+      <img (click)="imageClicked()" class="my_work_img" src="assets/img/bg/{{ projectImages[currentImage] }}" />
     </div>
-    
+    <div class="work_one_text">
+      <span data-aos="fade-up" data-aos-duration="2000" class="h3">
+        Sharkie
+      </span>
+      <p data-aos="fade-up" data-aos-duration="2000" class="tech_stack">
+        JavaScript | HTML | CSS |
+      </p>
+      <p data-aos="fade-up" data-aos-duration="2000" class="work_one_desc">
+        A 2D Jump´n Run game created with javascript.
+      </p>
+      <div data-aos="fade-up" data-aos-duration="2000" class="project-buttons">
+        <button class="btn-livetest">Live test</button>
+        <button class="btn-github">Github</button>
+      </div>
     </div>
+  </div>
+</div>

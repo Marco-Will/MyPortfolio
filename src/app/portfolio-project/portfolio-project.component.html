@@ -1,61 +1,32 @@
-<!-- <div class="project-container"> -->
-
-  <!--   <table>
-        <tbody>
-        <tr>
-        <td><div class="project-picture">
-            <img class="right-picture" src="assets/img/bg/pokemon-project.png" alt="">   
-        </div></td>
-        <td><div class="project-desc">
-            <h2>Pokédex</h2>
-            <h3>JavaScript | HTML | CSS | Api</h3>
-            <span>Based on the PokéAPI a simple library that provides and catalogues pokemon information.</span>
-            <div class="project-buttons">
-                <button class="btn-livetest">Live test</button>
-                <button class="btn-github">Github</button>
-            </div>
-        </div></td>
-        </tr>
-        </tbody>
-    </table> -->
-
-    <!-- <div class="project-picture">
-        <img class="right-picture" src="../../assets/img/bg/sharkie.png" alt="">   
-    </div>
-
-    <div class="project-desc">
-        <h2>Pokédex</h2>
-        <h3>JavaScript | HTML | CSS | Api</h3>
-        <span>Based on the PokéAPI a simple library that provides and catalogues pokemon information.</span>
-        <div class="project-buttons">
-            <button class="btn-livetest">Live test</button>
-            <button class="btn-github">Github</button>
-        </div>
-    </div>  
-
-    
-
-</div> -->
 <div class="work_one_container">
-   
-    
-    <div class="pic_text_container">
-        <div class="work_one_pic">
-            <!-- Image (Screenshot)-->
-            <img class="my_work_img" src="assets/img/bg/join-screen.png">
-        </div>
-        <div class="work_one_text">
-            <span class="h3">Join</span>
-            <span class="tech_stack">JavaScript | HTML | CSS |</span> 
-            <p class="work_one_desc">Task manager inspired by the kanban System. Create and 
-                organize tasks using drag and drop functions, assign users and 
-                categories.
-            </p>
-            <div class="project-buttons">
-                <button class="btn-livetest">Live test</button>
-                <button class="btn-github">Github</button>
-            </div>
-        </div>
+  <div class="pic_text_container">
+    <div
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="3000"
+      class="work_one_pic img-wrapper-purple-green"
+    >
+      <!-- Image (Screenshot)-->
+
+      <img
+        (click)="imageClicked()"
+        class="my_work_img"
+        src="assets/img/bg/{{ projectImages[currentImage] }}"
+      />
     </div>
-    
+    <div class="work_one_text">
+      <span data-aos="fade-up" data-aos-duration="2000" class="h3">Join</span>
+      <span data-aos="fade-up" data-aos-duration="2000" class="tech_stack"
+        >JavaScript | HTML | CSS |</span
+      >
+      <p data-aos="fade-up" data-aos-duration="2000" class="work_one_desc">
+        Task manager inspired by the kanban System. Create and organize tasks
+        using drag and drop functions, assign users and categories.
+      </p>
+      <div data-aos="fade-up" data-aos-duration="2000" class="project-buttons">
+        <button class="btn-livetest">Live test</button>
+        <button class="btn-github">Github</button>
+      </div>
     </div>
+  </div>
+</div>

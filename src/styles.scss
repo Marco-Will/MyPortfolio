@@ -1,11 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-body
-{
-    background-color:#141D2F ;
-    margin: 0;
-    font-family: Poppins-M;
-    overflow-x: hidden;
-    -ms-overflow-style: none;
+body {
+  background-color: #141d2f;
+  margin: 0;
+  font-family: Poppins-M;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
 }
 body::-webkit-scrollbar {
   width: 0;
@@ -13,182 +12,319 @@ body::-webkit-scrollbar {
   background: transparent;
 }
 
-html 
-{
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    overflow-x: hidden;
-   
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 /* COLOR VARIABLES */
 
-:root 
-{
-    --color-purple:  #9747FF;
-    --color-green: #70E61C;
-    --color-lightBlue: #1BDAE6;
-    --color-bg: #141D2F ;
-
+:root {
+  --color-purple: #9747ff;
+  --color-green: #70e61c;
+  --color-lightBlue: #1bdae6;
+  --color-bg: #141d2f;
 }
 
+.img-wrapper-purple-green {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 6px -2px 28px -1px var(--color-purple);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 6px -2px 28px -1px var(--color-green);
+  }
+}
+
+.img-wrapper-blue-purple {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 6px -2px 28px -1px var(--color-lightBlue);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 6px -2px 28px -1px var(--color-purple);
+  }
+}
+
+.img-wrapper-purple-blue {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 6px -2px 28px -1px var(--color-purple);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 6px -2px 28px -1px var(--color-lightBlue);
+  }
+}
+
+.img-wrapper-green-purple {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 6px -2px 28px -1px var(--color-green);
+  cursor: pointer;
 
 
-
-
+  &:hover {
+    box-shadow: 6px -2px 28px -1px var(--color-purple);
+  }
+}
 
 @font-face {
-    font-family: "Poppins-M";
-    src: url("assets/fonts/Poppins-Medium.ttf") format("truetype");
-  }
+  font-family: "Poppins-M";
+  src: url("assets/fonts/Poppins-Medium.ttf") format("truetype");
+}
 
-  @font-face {
-    font-family: "Poppins-L";
-    src: url("assets/fonts/Poppins-ExtraLight.ttf") format("truetype");
-  }
+@font-face {
+  font-family: "Poppins-L";
+  src: url("assets/fonts/Poppins-ExtraLight.ttf") format("truetype");
+}
 
-  /**
+/**
   
   
                                                   ANIMATIONS & EFFECTS
   */
 
-  /** USE ITEM ANIMATION */
-  .item-used:hover{
-    -webkit-animation:bounce-out 1.2s ease 0s infinite normal;
-    -moz-animation:bounce-out 1.2s ease 0s infinite normal;
-    -ms-animation:bounce-out 1.2s ease 0s infinite normal;
-    animation:bounce-out 1.2s ease 0s infinite normal;
-    }
-    
-    @-webkit-keyframes bounce-out {
-    0%{ -webkit-transform: scale(1); transform: scale(1); }
-    50%{ -webkit-transform: scale(0.90); transform: scale(0.90); }
-    70%{ opacity: 1; -webkit-transform: scale(1.1); transform: scale(1.1); }
-    100%{ opacity: 0; -webkit-transform: scale(0.3); transform: scale(0.3); }
-    }
-    
-    @keyframes bounce-out {
-    0%{ transform: scale(1); }
-    50%{ transform: scale(0.90); }
-    70%{ opacity: 1; transform: scale(1.1); }
-    100%{ opacity: 0; transform: scale(0.3); }
-    }
+/** USE ITEM ANIMATION */
+.item-used:hover {
+  -webkit-animation: bounce-out 1.2s ease 0s infinite normal;
+  -moz-animation: bounce-out 1.2s ease 0s infinite normal;
+  -ms-animation: bounce-out 1.2s ease 0s infinite normal;
+  animation: bounce-out 1.2s ease 0s infinite normal;
+}
 
-    @keyframes lowStatus {
-      0%,
-      50%,
-      100% {
-        opacity: 1;
-      }
-    
-      25%,
-      75% {
-        opacity: 0;
-      }
-    }
+@-webkit-keyframes bounce-out {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+}
 
+@keyframes bounce-out {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+}
 
-    .blink-effect-purple
-    {
-      animation: blink 7s infinite;
-    }
+@keyframes lowStatus {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
 
-    
-    /** blink effect purple*/ 
-      @-webkit-keyframes blink {
-        20%,
-        24%,
-        55% {
-          color: #111;
-          text-shadow: none;
-        }
-      
-        0%,
-        19%,
-        21%,
-        23%,
-        25%,
-        54%,
-        56%,
-        100% 
-        {
-        text-shadow: 0 0 5px var(--color-purple), 0 0 15px var(--color-purple), 0 0 20px var(--color-purple), 0 0 40px var(--color-purple), 0 0 60px #ff0000, 0 0 10px var(--color-purple), 0 0 98px #ff0000;
-          color: #ffffff;
-        }
-      }
-      
-      @keyframes blink {
-        20%,
-        24%,
-        55% {
-          color: #111;
-          text-shadow: none;
-        }
-      
-        0%,
-        19%,
-        21%,
-        23%,
-        25%,
-        54%,
-        56%,
-        100% {
-        text-shadow: 0 0 80px var(--color-purple), 0 0 20px var(--color-purple), 0 0 0px var(--color-purple), 0 0 0px var(--color-purple), 0 0 60px #141D2F , 0 0 10px var(--color-purple), 0 0 98px #141D2F ;
-          color: var(--color-purple);
-        }
-      }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
 
+.blink-effect-purple {
+  animation: blink 4s infinite;
+}
 
+/** blink effect purple*/
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
 
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px var(--color-purple), 0 0 15px var(--color-purple),
+      0 0 20px var(--color-purple), 0 0 40px var(--color-purple),
+      0 0 60px #ff0000, 0 0 10px var(--color-purple), 0 0 98px #ff0000;
+    color: #ffffff;
+  }
+}
 
-      .blink-effect-lightBlue
-      {
-        
-        animation: blink-blue 7s infinite;
-  
-      }
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
 
-      /** blink effect light-blue*/
-      @-webkit-keyframes blink {
-        20%,
-        24%,
-        55% {
-          color: #111;
-          text-shadow: none;
-        }
-      
-        0%,
-        19%,
-        21%,
-        23%,
-        25%,
-        54%,
-        56%,
-        100% 
-        {
-        text-shadow: 0 0 5px var(--color-lightBlue), 0 0 15px var(--color-lightBlue), 0 0 20px var(--color-lightBlue), 0 0 40px var(--color-lightBlue), 0 0 60px #ff0000, 0 0 10px var(--color-lightBlue), 0 0 98px #ff0000;
-          color: #ffffff;
-        }
-      }
-      
-      @keyframes blink-blue {
-        20%,
-        24%,
-        55% {
-          color: #111;
-          text-shadow: none;
-        }
-      
-        0%,
-        19%,
-        21%,
-        23%,
-        25%,
-        54%,
-        56%,
-        100% {
-        text-shadow: 0 0 80px var(--color-lightBlue), 0 0 20px var(--color-lightBlue), 0 0 0px var(--color-lightBlue), 0 0 0px var(--color-lightBlue), 0 0 60px #141D2F , 0 0 10px var(--color-lightBlue), 0 0 98px #141D2F ;
-          color: var(--color-lightBlue);
-        }
-      }
-    
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 80px var(--color-purple), 0 0 20px var(--color-purple),
+      0 0 0px var(--color-purple), 0 0 0px var(--color-purple), 0 0 60px #141d2f,
+      0 0 10px var(--color-purple), 0 0 98px #141d2f;
+    color: var(--color-purple);
+  }
+}
+
+.blink-effect-lightBlue {
+  animation: blink-blue 7s infinite;
+}
+
+/** blink effect light-blue*/
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px var(--color-lightBlue), 0 0 15px var(--color-lightBlue),
+      0 0 20px var(--color-lightBlue), 0 0 40px var(--color-lightBlue),
+      0 0 60px #ff0000, 0 0 10px var(--color-lightBlue), 0 0 98px #ff0000;
+    color: #ffffff;
+  }
+}
+
+@keyframes blink-blue {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 80px var(--color-lightBlue),
+      0 0 20px var(--color-lightBlue), 0 0 0px var(--color-lightBlue),
+      0 0 0px var(--color-lightBlue), 0 0 60px #141d2f,
+      0 0 10px var(--color-lightBlue), 0 0 98px #141d2f;
+    color: var(--color-lightBlue);
+  }
+}
+
+.wobble {
+  -webkit-animation-name: wobble;
+  animation-name: wobble;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes wobble {
+  0% {
+    -webkit-transform: none;
+    transform: none;
+  }
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes wobble {
+  0% {
+    -webkit-transform: none;
+    transform: none;
+  }
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/** zoom in animation*/
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}

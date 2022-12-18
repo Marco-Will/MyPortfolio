@@ -2,16 +2,21 @@
    
     
     <div class="pic_text_container">
-        <div class="work_one_pic">
+        <div class="work_one_pic img-wrapper-blue-purple">
             <!-- Image (Screenshot)-->
-            <img class="my_work_img" src="assets/img/bg/myportfolio.png">
+            <img (click)="imageClicked()" class="my_work_img" src="assets/img/bg/{{ projectImages[currentImage] }}" />
+
         </div>
         <div class="work_one_text">
-           <span class="h3"> My Portfolio</span>
-            <p class="tech_stack">Angular | TypeScript | HTML | SCSS </p>
-            <p class="work_one_desc">My portfolio website built with Angular.
+           <span data-aos="fade-up"
+     data-aos-duration="2000" class="h3"> My Portfolio</span>
+            <p data-aos="fade-up"
+     data-aos-duration="2000" class="tech_stack">Angular | TypeScript | HTML | SCSS </p>
+            <p data-aos="fade-up"
+     data-aos-duration="2000" class="work_one_desc">My portfolio website built with Angular.
             </p>
-            <div class="project-buttons">
+            <div data-aos="fade-up"
+     data-aos-duration="2000" class="project-buttons">
                 <button class="btn-livetest">Live test</button>
                 <button class="btn-github">Github</button>
             </div>
