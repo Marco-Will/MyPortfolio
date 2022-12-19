@@ -14,6 +14,8 @@ import { ContactComponent } from './contact/contact.component';
 import { PortfolioProjectTwoComponent } from './portfolio-project-two/portfolio-project-two.component';
 import { PortfolioProjectMirrorTwoComponent } from './portfolio-project-mirror-two/portfolio-project-mirror-two.component';
 import { FooterComponent } from './footer/footer.component';
+import { HamburgerComponent } from './hamburger/hamburger.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { FooterComponent } from './footer/footer.component';
     ContactComponent,
     PortfolioProjectTwoComponent,
     PortfolioProjectMirrorTwoComponent,
-    FooterComponent
+    FooterComponent,
+    HamburgerComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

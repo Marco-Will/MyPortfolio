@@ -1,0 +1,21 @@
+<header>
+    <div class="content">
+        <span>Marco</span>
+        <div (click)="openMenu()" class="nav-container">
+            <input type="checkbox" [checked]="menuOpen">
+            <div>
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+        </div>
+        <div class="menu" [class.responsive]="menuOpen">
+            <a href="#my-start-site" (click)="closeMenu()">Home</a>
+            <a href="#about-me" (click)="closeMenu('about')">About</a>
+            <a href="#my-skills" (click)="closeMenu('skills')">Skills</a>
+            <a href="#my-portfolio" (click)="closeMenu('projects')">Projects</a>
+            <a href="#my-contact" (click)="closeMenu('about')">Contact</a>
+
+        </div>
+    </div>
+</header>

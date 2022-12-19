@@ -92,6 +92,7 @@
       background: #141d2f;
       border: 2px solid var(--color-purple);
       border-radius: 10px;
+      
       &:hover{
         border-color: var(--color-green);
         box-shadow: -2px 3px 16px 1px var(--color-green);
@@ -145,10 +146,8 @@
   }
   .contact-right {
     h1 {
-      font-size: 5rem;
-
       font-size: 3rem !important;
-
+      padding-left: 6%;
       img {
         object-fit: contain;
         width: 60%;

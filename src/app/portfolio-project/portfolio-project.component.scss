@@ -21,6 +21,18 @@
       width: 30rem;
       height: 20rem;
       border-radius: 1rem;
+      overflow: hidden;
+      border-radius: 1rem;
+      box-shadow: 6px -2px 28px -1px var(--color-purple);
+      transition: ease-in-out 1s;
+
+      cursor: pointer;
+
+      &:hover {
+        transition: ease-in-out 1s;
+        scale: 1.1;
+        box-shadow: 6px -2px 28px -1px var(--color-green);
+      }
     }
     .work_one_text {
       width: 510px;

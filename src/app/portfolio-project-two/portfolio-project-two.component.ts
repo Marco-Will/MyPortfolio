@@ -19,7 +19,11 @@ export class PortfolioProjectTwoComponent implements OnInit {
   {
      
     this.currentImage = this.currentImage % this.projectImages.length;
-    
+    setInterval(() =>
+    {
+    this.currentImage++;
+    this.currentImage = this.currentImage % this.projectImages.length; // % = loop
+    },6000)
   }
 
   imageClicked()
