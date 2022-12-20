@@ -9,7 +9,7 @@ footer {
   color: white;
   z-index: 2;
   background-color: var(--color-bg);
-
+  
   .footer-left {
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@ footer {
       cursor: pointer;
       transition: 0.1s ease-in-out;
       object-fit: contain;
-      height: 2.5rem;
+      height: 2rem;
 
       &:hover {
         transform: scale(1.3);

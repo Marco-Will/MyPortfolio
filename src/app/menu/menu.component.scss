@@ -9,6 +9,29 @@ header {
     
 }
 
+.onsite
+{
+    color: var(--color-green)!important;
+}
+a.active {
+    color: blue;
+  }
+.active-home {
+    color: var(--color-green)!important; /* or any other color you want */
+  }
+  .active-about {
+    color: var(--color-green)!important; /* or any other color you want */
+  }
+  .active-skills {
+    color: var(--color-green)!important; /* or any other color you want */
+  }
+  .active-projects {
+    color: var(--color-green)!important; /* or any other color you want */
+  }
+  .active-contact {
+    color: var(--color-green)!important; /* or any other color you want */
+  }
+
 .content {
     display: flex;
     justify-content: space-between;
@@ -20,8 +43,11 @@ header {
     {
         font-size: 1.6rem;
         color: white;
+        cursor: pointer;
     }
+    
     a {
+        
         font-family: Poppins-L;
         position: relative;
         font-size: 1.8rem;
@@ -29,7 +55,9 @@ header {
         text-decoration: none;
         margin-left: 3rem;
         cursor: pointer;
-
+       &:hover{
+        color: var(--color-green);
+       } 
     &::after {
             content: "";
             position: absolute;

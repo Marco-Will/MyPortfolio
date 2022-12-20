@@ -44,11 +44,11 @@
         color: var(--color-green);
         font-size: 1.6rem;
         text-decoration: none;
-        transition: ease-in-out 1s;
+        transition: ease-in-out 0.5s;
 
         &:hover {
           color: var(--color-purple);
-          transition: ease-in-out 1s;
+          transition: ease-in-out 0.5s;
         }
       }
     }
@@ -125,10 +125,14 @@
     margin-right: 13%;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    img 
+    {
+    height: 2rem;
 
+    }
     &:hover {
       transform: scale(1.2);
-      transform-origin: top left;
+      transform-origin: bottom;
       transition: 0.3s ease-in-out;
     }
   }

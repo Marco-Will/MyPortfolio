@@ -1,6 +1,6 @@
-<header>
+<header >
     <div class="content">
-        <span>Marco</span>
+        <span routerLink="/" onclick="location.href='#my-start-site'">Marco</span>
         <div (click)="openMenu()" class="nav-container">
             <input type="checkbox" [checked]="menuOpen">
             <div>
@@ -9,13 +9,15 @@
                 <span class="line line3"></span>
             </div>
         </div>
-        <div class="menu" [class.responsive]="menuOpen">
-            <a href="#my-start-site" (click)="closeMenu()">Home</a>
-            <a href="#about-me" (click)="closeMenu('about')">About</a>
-            <a href="#my-skills" (click)="closeMenu('skills')">Skills</a>
-            <a href="#my-portfolio" (click)="closeMenu('projects')">Projects</a>
-            <a href="#my-contact" (click)="closeMenu('about')">Contact</a>
+        <div  class="menu" [class.responsive]="menuOpen"  >
+            <a [style.color]="color3"  [class.active-home]="activeHome" routerLink="/#my-start-site"  onclick="location.href='#my-start-site'" (click)="closeMenu()">Home</a>
+            <a [style.color]="color" [class.active-about]="activeAboutMe" routerLink="/#about-me" onclick="location.href='#about-me'"  (click)="closeMenu('about')">About</a>
+            <a [style.color]="color2" [class.active-about]="activeSkills" onclick="location.href='#my-skills'"  (click)="closeMenu('skills')">Skills</a>
+            <a [style.color]="color4" [class.active-about]="activeProjects" onclick="location.href='#my-portfolio'" (click)="closeMenu('projects')">Portfolio</a>
+            <a [style.color]="color5" [class.active-about]="activeContact" onclick="location.href='#my-contact'" (click)="closeMenu('about')">Contact</a>
 
+            <!-- //test -->
+            
         </div>
     </div>
 </header>

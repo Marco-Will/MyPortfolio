@@ -1,14 +1,9 @@
 <div class="work_one_container">
   <div class="pic_text_container">
-    <div
-      data-aos="flip-left"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="3000"
-      class="work_one_pic"
-    >
+    <div>
       <!-- Image (Screenshot)-->
 
-      <img
+      <img #projectPic
         (click)="imageClicked()"
         class="my_work_img"
         src="assets/img/bg/{{ projectImages[currentImage] }}"

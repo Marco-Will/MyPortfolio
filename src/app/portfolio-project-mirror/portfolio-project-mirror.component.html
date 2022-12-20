@@ -2,7 +2,11 @@
   <div class="pic_text_container">
     <div class="work_one_pic" [style.transition]="'0.5s'">
       <!-- Image (Screenshot)-->
-      <img (click)="imageClicked()" class="my_work_img" src="assets/img/bg/{{ projectImages[currentImage] }}" />
+      <img #projectPic
+        (click)="imageClicked()"
+        class="my_work_img"
+        src="assets/img/bg/{{ projectImages[currentImage] }}"
+      />
     </div>
     <div class="work_one_text">
       <span data-aos="fade-up" data-aos-duration="2000" class="h3">
