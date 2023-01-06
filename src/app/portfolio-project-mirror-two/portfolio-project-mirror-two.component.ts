@@ -25,7 +25,7 @@ export function fadeInOut(): AnimationTriggerMetadata {
   ] 
 })
 export class PortfolioProjectMirrorTwoComponent implements OnInit {
-  projectImages = ['sharkie.png','sharkie-play.png','sharkie-ingame.png']
+  projectImages = ['pkm1.png','pkm2.png','pkm3.png']
   currentImage = 0;
   
   @ViewChild('projectPic', { static: true })

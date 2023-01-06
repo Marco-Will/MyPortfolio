@@ -7,13 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent 
 {
+  /**varibles for the changeBg function */
   bgImagesLeft = ['assets/img/bg/Purple shadow 1.png','assets/img/bg/home-bg-left-2.png','assets/img/bg/home-bg-left-3.png']
   currentImage = 0;
 
-  ngOnInit()
-  {
-    
-  }
+  
 
   /**function for change images within an interval */
   changeBg()
@@ -22,9 +20,6 @@ export class HomeComponent
     {
     this.currentImage++;
     this.currentImage = this.currentImage % this.bgImagesLeft.length; // % = loop
-    
-
-    
     },4000)
   }
 }

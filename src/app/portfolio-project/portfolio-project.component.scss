@@ -60,6 +60,9 @@
         padding: 0px;
         gap: 86px;
 
+        a{
+          text-decoration: none;
+        }
         .btn-livetest {
           font-size: 1rem;
           border: 0;
@@ -75,7 +78,8 @@
           color: white;
           transform-origin: 50% 0%;
           transition: 0.3s ease-in-out;
-
+          
+          
           &:hover {
             background-color: var(--color-green);
           }

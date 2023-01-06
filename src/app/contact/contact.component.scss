@@ -61,6 +61,7 @@
     gap: 1rem;
     margin-top: 1.3rem;
     padding-bottom: 4rem;
+    resize: none;
 
     input {
       width: 70%;
@@ -72,6 +73,12 @@
       gap: 10px;
       box-shadow: -2px 3px 16px 1px #8147ff;
 
+      
+    &:focus {
+      outline: 0;
+      border-color: var(--color-green);
+      box-shadow: -2px 3px 16px 1px var(--color-green);
+    }
       &:hover{
         border-color: var(--color-green);
         box-shadow: -2px 3px 16px 1px var(--color-green);
@@ -92,7 +99,12 @@
       background: #141d2f;
       border: 2px solid var(--color-purple);
       border-radius: 10px;
-      
+      resize: none;
+      &:focus {
+        outline: 0;
+        border-color: var(--color-green);
+        box-shadow: -2px 3px 16px 1px var(--color-green);
+      }
       &:hover{
         border-color: var(--color-green);
         box-shadow: -2px 3px 16px 1px var(--color-green);

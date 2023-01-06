@@ -7,11 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AboutMeComponent 
 {
-  test: string = "";
-  /* changeIcon()
-  {
-    document.getElementById('test').innerHTML= 'test';
-  } */  
+  
   
 }
 

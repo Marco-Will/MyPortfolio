@@ -56,7 +56,9 @@
         align-items: flex-start;
         padding: 0px;
         gap: 86px;
-
+        a{
+          text-decoration: none;
+        }
         .btn-livetest {
           font-size: 1rem;
           border: 0;

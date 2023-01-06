@@ -96,7 +96,7 @@
       width: 80% !important;
       margin-bottom: 2rem !important;
       margin-top: 2rem !important;
-
+      text-align: center;
       color: white;
       display: flex;
       flex-direction: column;
@@ -106,12 +106,12 @@
       display: flex;
       margin-top: 3rem;
       font-size: 1rem;
-
+      flex-direction: column;
       .icon-lamp {
         object-fit: contain;
         height: 2.5rem;
-
-        padding-right: 13%;
+        margin-bottom: 3rem;
+        padding-right: 0;
 
         align-self: center;
         transition: 0.2s ease-in-out;
@@ -126,8 +126,9 @@
       .icon-puzzle {
         object-fit: contain;
         height: 2.5rem;
+        margin-bottom: 3rem;
 
-        padding-right: 11%;
+        padding-right: 0;
 
         align-self: center;
         transition: 0.2s ease-in-out;
@@ -154,10 +155,6 @@
       img {
         object-fit: contain;
         height: 20rem;
-        /* width:50%; */
-        /* position: absolute;
-                top: 15%;
-                left: 5%; */
         z-index: 1;
       }
     }

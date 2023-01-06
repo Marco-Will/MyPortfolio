@@ -1,35 +1,61 @@
-<div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"   class="contact-right" >
-
-    <h1>Contact<img src="assets/img/icons/line_blue.png" alt=""></h1>
-
+<div
+  data-aos="fade-left"
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine"
+  class="contact-right"
+>
+  <h1>Contact<img src="assets/img/icons/line_blue.png" alt="" /></h1>
 </div>
 
-<div class="contact-container">  
-   
-   
-        <div  data-aos="fade-right" class="contact-text">
-            
-            <img class="line" src="assets/img/icons/LINE 1.png" alt="">
-            <div class="text">
-                <h3>Got a problem to solve?</h3>
-                <span class="hide">Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.</span> <br><br><br>
-                <span class="hide">Need a Frontend developer? <a href="mailto:marco-will-dev@outlook.com"><b>Contact me!</b></a></span>
-            </div>
-            
-        </div>
-        
-        <form  data-aos="fade-left">
-            
-            <input type="text" id="input1" name="input1" placeholder="Your name"><br>
-          
-            <input type="text" id="input2" name="input2" placeholder="Your email"><br>
-           
-            <textarea id="textarea" name="textarea" placeholder="Your message"></textarea><br>
-            <button type="submit">Say hello ;)</button>
-            <a class="arrow-up" href="#my-start-site"> <img  src="{{ currentArrowImage }}" (mouseenter)="onImageHover()" (mouseleave)="onImageLeave()"></a>
+<div class="contact-container">
+  <div data-aos="fade-right" class="contact-text">
+    <img class="line" src="assets/img/icons/LINE 1.png" alt="" />
+    <div class="text">
+      <h3>Got a problem to solve?</h3>
+      <span class="hide"
+        >Contact me through this form, I am interested in hearing you, knowing
+        your ideas and contributing to your projects with my work.</span
+      >
+      <br /><br /><br />
+      <span class="hide"
+        >Need a Frontend developer?
+        <a href="mailto:marco-will-dev@outlook.com"><b>Contact me!</b></a></span
+      >
+    </div>
+  </div>
 
-        </form>   
-        
-        <img  class="bg-purple" src="assets/img/bg/Purple shadow 4.png" alt="" >
-   
+  <form action="https://formsubmit.co/8287f858cfa511ba79395e53fc488914" method="POST" data-aos="fade-left">
+    <input
+      type="text"
+      id="input1"
+      name="name"
+      placeholder="Your name"
+      required
+    /><br />
+
+    <input
+      type="email"
+      id="input2"
+      name="email"
+      placeholder="Your email"
+      required
+    /><br />
+
+    <textarea
+      id="textarea"
+      name="message"
+      placeholder="Your message"
+      required
+    ></textarea
+    ><br />
+    <button type="submit">Say hello ;)</button>
+    <a class="arrow-up" href="#my-start-site">
+      <img
+        src="{{ currentArrowImage }}"
+        (mouseenter)="onImageHover()"
+        (mouseleave)="onImageLeave()"
+    /></a>
+  </form>
+
+  <img class="bg-purple" src="assets/img/bg/Purple shadow 4.png" alt="" />
 </div>
