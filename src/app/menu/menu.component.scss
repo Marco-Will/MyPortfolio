@@ -58,7 +58,23 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-inline: 24px;
+  padding-left: 8%;
+  padding-right: 8%;
+
+  .icon {
+    margin-left: 0 !important;
+    text-decoration: none;
+    &:hover::after {
+      width: 0;
+    }
+  }
+  img {
+    object-fit: contain;
+    height: 80px;
+    cursor: pointer;
+    margin-left: 0 !important;
+    margin-top: 1rem;
+  }
 
   span {
     font-size: 1.6rem;
@@ -75,7 +91,7 @@ header {
     margin-left: 3rem;
     cursor: pointer;
     &:hover {
-      color: var(--color-green)!important;
+      color: var(--color-green) !important;
     }
     &::after {
       content: "";
@@ -152,18 +168,25 @@ header {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 922px) {
   header {
     position: fixed;
     display: flex;
     justify-content: center;
-    height: 3rem;
+    height: 4rem;
     background-color: var(--color-bg);
     z-index: 1;
     width: 100vw;
   }
   .nav-container {
     display: grid;
+  }
+  img {
+    object-fit: contain;
+    height: 60px !important;
+    cursor: pointer;
+    margin-left: 0 !important;
+    margin-top: 1rem !important;
   }
 
   .menu {

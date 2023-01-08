@@ -1,6 +1,7 @@
 <header [ngClass]="{'hideMenu': animate}"  ><!-- [class]="hideMenu" -->
     <div class="content">
-        <span routerLink="/" onclick="location.href='#my-start-site'">Marco</span>
+        <!-- <span routerLink="/" onclick="location.href='#my-start-site'">Marco</span> -->
+       <a class="icon" href="#my-start-site"> <img src="assets/img/icons/mw-fav.png" alt=""></a>
         <div (click)="openMenu()" class="nav-container">
             <input type="checkbox" [checked]="menuOpen">
             <div>
