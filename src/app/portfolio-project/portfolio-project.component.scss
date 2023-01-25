@@ -18,7 +18,7 @@
     align-items: center;
 
     .my_work_img {
-      width: 30rem;
+      width: 36rem;
       height: 20rem;
       border-radius: 0.2rem;
       overflow: hidden;
@@ -110,7 +110,7 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .pic_text_container {
     display: flex;
     flex-direction: column;
@@ -118,8 +118,8 @@
     align-items: center;
     .my_work_img {
       box-shadow: 6px -2px 28px -1px var(--color-purple);
-      width: 25rem !important;
-      height: 15rem !important;
+      width: 36rem !important;
+      height: 22rem !important;
       border-radius: 1rem;
     }
     .work_one_text {
@@ -142,7 +142,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .pic_text_container {
     display: flex;
     flex-direction: column;

@@ -17,6 +17,7 @@ import { MenuComponent } from './menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { PortfolioProjectThreeComponent } from './portfolio-project-three/portfolio-project-three.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
     FooterComponent,
     MenuComponent,
     ImprintComponent,
-    DataProtectionComponent
+    DataProtectionComponent,
+    PortfolioProjectThreeComponent
   ],
   imports: [
     BrowserModule,
